@@ -5,10 +5,10 @@ def main():
     try:
         response = requests.get(url)
         response.raise_for_status() 
-        print("Відповідь сервера:")
+        print("Response:")
         print(response.text)
     except requests.exceptions.RequestException as e:
-        print(f"Помилка при запиті: {e}")
+        print(f"Err: {e}")
 
 if __name__ == "__main__":
     main()
